@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
+	
 	<parent>
-    <artifactId>Spring</artifactId>
-    <groupId>by.ilya.spring</groupId>
-    <version>1.0.0.0-SNAPSHOT</version>
-  </parent>
+		<artifactId>Spring</artifactId>
+		<groupId>by.ilya.spring</groupId>
+		<version>1.0.0.0-SNAPSHOT</version>
+	</parent>
 
 	<groupId>by.ilya.spring.core</groupId>
 	<artifactId>core</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
-	
+
 	<description>A single-jar Application</description>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<mainClass>${project.groupId}.Main</mainClass>		
+		<mainClass>${project.groupId}.Main</mainClass>
 		<junit.version>3.8.1</junit.version>
 	</properties>
 
@@ -24,6 +26,7 @@
 	<name>${project.artifactId}</name>
 
 	<url>http://www.matthewjosephtaylor.com</url>
+	
 	<scm>
 		<connection>scm:git:git@github.com:matthewjosephtaylor/${project.artifactId}.git</connection>
 		<url>scm:git:git@github.com:matthewjosephtaylor/${project.artifactId}.git</url>
@@ -38,10 +41,8 @@
 			<artifactId>junit</artifactId>
 			<version>${junit.version}</version>
 			<scope>test</scope>
-		</dependency>
-		<!-- If I ever write a language I will make sure that it has a logging API built in from the start -->		
-		
+		</dependency>		
 	</dependencies>
 
-	
+
 </project>
