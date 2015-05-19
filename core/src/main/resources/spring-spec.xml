@@ -1,27 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<!-- myInit  "свой" по умолчанию метод, вызывается перед созданием бина 
 <beans 
-	default-init-method="myInit" <!"свой" по умолчанию метод, вызывается перед созданием бина >
+	default-init-method="myInit" 
 	default-destroy-method="cleanUp">
-	<bean <! бин >     
-		id = "name"              <! именование бина >
-		name="triangle-name"     <! еще одно имя бина >
-		class = "main.Triangle"  <! ссылка на java класс -->
-		scope = "singleton"      <! один и тот же объект,-->
-		        "prototype"      <! новый объект каждый раз-->
-		autowire = "byName" 	 <! установит в поля бина те бины которые объявены и совпадают с именем полей бина -->
-		parent = "parenttriangle"<! id родительского бина -->
-		init-method="myInit"     <! "свой" метод, вызывается перед созданием бина -->
-		destroy-method="cleanUp" <! "свой" метод, вызывается после созданием бина  -->
+	<bean      
+		id = "name"                именование бина 
+		name="triangle-name"      еще одно имя бина 
+		class = "main.Triangle"   ссылка на java класс 
+		scope = "singleton"       один и тот же объект,
+		        "prototype"       новый объект каждый раз
+		autowire = "byName" 	  установит в поля бина те бины которые объявены и совпадают с именем полей бина 
+		parent = "parenttriangle" id родительского бина 
+		init-method="myInit"      "свой" метод, вызывается перед созданием бина 
+		destroy-method="cleanUp"  "свой" метод, вызывается после созданием бина  
  		>
- 		<property <! Установка свойства -->
+ 		<property <! Установка свойства >
  				name="type" 
  				value="Equateral"
- 				ref="zeroPoint" <!-- ссылка на другой бин -->
+ 				ref="zeroPoint"  ссылка на другой бин 
  			>
- 			<idref bean="zeroPoint" /> <!-- только для String работает -->
- 			<list merge="true"> <!-- merge делает список общим либо затирает --> <!--  -- список для параметра -->
-				<ref bean="zeroPoint"/> <!-- ссылка на другой бин -->
+ 			<idref bean="zeroPoint" />  только для String работает 
+ 			<list merge="true">  merge делает список общим либо затирает   список для параметра 
+				<ref bean="zeroPoint"/>  ссылка на другой бин 
 				<bean id="pionB" class="main.Point">
 					<property name="x" value="5" />
 					<property name="y" value="5" />
@@ -36,5 +37,5 @@
  		
 	</bean>	
 	
-
+-->
 	

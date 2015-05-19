@@ -125,22 +125,23 @@
 	</bean>
 
 	<!-- <bean id="HibernateDaoImpl" class="dao.HibernateDaoImpl"/> -->
-
+	<!-- 
 	<aop:config proxy-target-class="false" expose-proxy="true">
 		<aop:aspect id="loggingAspect" ref="loggingAspect">
 			<aop:pointcut id="allGetters" expression="execution(* getCircle*())" />
 			<aop:around pointcut-ref="allGetters" method="myAroundAdvice2" />
 		</aop:aspect>
-	</aop:config>
+	</aop:config> -->
 
 	<!-- <bean class="org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator"> 
 		<property name="proxyTargetClass" value="true"/> </bean> -->
 
 
-
-	<tx:annotation-driven proxy-target-class="true" />
-	<aop:config proxy-target-class="true" />
-	<aop:aspectj-autoproxy proxy-target-class="true" />
+	<!-- <tx:annotation-driven proxy-target-class="true" />  -->
+	
+	
+	<!--<aop:config proxy-target-class="true" />-->
+	<!-- <aop:aspectj-autoproxy proxy-target-class="true" /> -->
 
 
 

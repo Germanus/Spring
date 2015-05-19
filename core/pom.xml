@@ -5,11 +5,11 @@
 	
 	<parent>
 		<artifactId>Spring</artifactId>
-		<groupId>by.ilya.spring</groupId>
+		<groupId>my.ilya.spring</groupId>
 		<version>1.0.0.0-SNAPSHOT</version>
 	</parent>
 
-	<groupId>by.ilya.spring.core</groupId>
+	<groupId>my.ilya.spring.core</groupId>
 	<artifactId>core</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
